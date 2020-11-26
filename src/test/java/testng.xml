@@ -5,7 +5,7 @@
 
     <test name="Win10">
         <parameter name="browser" value="Chrome"/>
-        <parameter name="version" value="75.0"/>
+        <parameter name="version" value="86.0"/>
         <parameter name="platform" value="Win10"/>
         <parameter name="resolution" value="1024x768"/>
         <parameter name="timezone" value="UTC+05:30"/>
