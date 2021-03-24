@@ -40,7 +40,7 @@ public class Uploadtest {
         capabilities.setCapability("browserName", System.getenv("LT_BROWSER_NAME"));
         capabilities.setCapability("browserVersion", System.getenv("LT_BROWSER_VERSION"));
         capabilities.setCapability("platformName", System.getenv("LT_OPERATING_SYSTEM"));
-        capabilities.setCapability("build", "Upload File");
+        capabilities.setCapability("build", System.getenv("LT_BUILD_NAME"));
         capabilities.setCapability("name", "testName");
         capabilities.setCapability("network", true);
         capabilities.setCapability("visual", true);
