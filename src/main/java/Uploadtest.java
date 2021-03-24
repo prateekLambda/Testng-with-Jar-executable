@@ -37,9 +37,9 @@ public class Uploadtest {
 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserName", browser);
-        capabilities.setCapability("browserVersion", version);
-        capabilities.setCapability("platformName", platform);
+        capabilities.setCapability("browserName", System.getenv("LT_BROWSER_NAME"));
+        capabilities.setCapability("browserVersion", System.getenv("LT_BROWSER_VERSION"));
+        capabilities.setCapability("platformName", System.getenv("LT_OPERATING_SYSTEM"));
         capabilities.setCapability("build", "Upload File");
         capabilities.setCapability("name", "testName");
         capabilities.setCapability("network", true);
